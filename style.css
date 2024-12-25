@@ -1,0 +1,198 @@
+/* CSS Document 
+
+Project Name:  Unique Hospital || Health and Medical 
+Version:  1.0   
+Author Name: Probus Software Pvt Ltd.
+Support Email : Akashkumbhar89@gmail.com
+Design By: Akash Kumbhar
+Creation Date: 24 April 2022
+
+*****=====***** TABLE OF CONTENT *****=====*****
+
+01. IMPORTED STYLE CSS
+02. GENERAL CSS
+03. Background Over Layer CSS
+04. Section Title Css
+05. Scrollup CSS
+06. Header top Style Css
+07. Navbar Style Css
+08. Main Slider Style Css
+09. About Style Css
+10. Testimonal Style Css
+11. Practice Style Css
+12. Counter / Funfact Style Css
+13. Progressber  Style Css
+14. Service Style Css
+15. Team Style Css
+16. Choose Us Style Css
+17. Blog Style Css
+18. Contact Style Css
+19. Footer Style Css
+20. Error Style css
+21. Gallery Style css
+22. Inner style Css
+23. Image Background style Css
+23. Doctor Card Style Css
+
+*/
+
+/* GOOGLE FONTs */
+/* TWK Lausanne is Replaced with Work Sans Font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* GT Super Display is Replaced with Playfair Display Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/*****=====*****=====*****=====*****=====
+    02. General CSS 
+=====*****=====*****=====*****=====*****/
+
+:root {
+  /* background */
+  --bgWhite: #fff;
+  --bgPrimary: #e7ebea;
+  --bgSec: #f6e3d1;
+  --bgTertiar: #eaeaea;
+
+  /* font-Style */
+  --primaryFont: "Work Sans", serif;
+  --secFont: "Playfair Display", serif;
+
+  /* Colors */
+  --primaryColor: #11322c;
+  --secColor: #8c6e53;
+  --tertiaryColor: #877d64;
+  --whiteColor: #fff;
+  --blackColor: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000 !important;
+}
+.navbarBx {
+  background-color: #ffffff;
+  padding: 0.8em 1.6em;
+}
+.navbarBx .logoBx {
+  height: 2em;
+}
+.logoBx img {
+  width: 100%;
+  height: 100%;
+}
+.navbarBx .accouncement h6 {
+  font-family: var(--primaryFont);
+  color: var(--primaryColor);
+  letter-spacing: -0.5px;
+  font-size: 1.2em;
+}
+.navIcon .navIconBtn {
+  border: none;
+  background-color: transparent;
+}
+.navIcon .navIconBtn:active {
+  transform: translateY(4px);
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/HeroSection/HeroImg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .heroContentBx {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 100vh;
+  padding: 1.8em;
+}
+.heroContentBx {
+  position: relative;
+}
+
+.heroContentBx .roundedOverlay {
+  width: 90px;
+  height: 90px;
+  background: #ffbb36;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.roundedOverlay .roundedContent {
+  text-align: center;
+  height: 100%;
+  padding: 5px;
+  border: 1px dashed #666;
+  border-radius: 50%;
+  position: relative;
+}
+.roundedOverlay .roundedContent p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 500;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.hero .heroTextBx {
+  color: var(--bgWhite);
+  gap: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroTextBx .heroHeader {
+  font-family: var(--secFont);
+  font-size: 3.2em;
+  font-weight: 400;
+}
+.heroTextBx .heroDescription {
+  font-family: var(--primaryFont);
+  font-size: 1.3em;
+  font-weight: 300;
+}
+.heroTextBx .HeroCTA {
+  background: var(--bgWhite);
+  border-radius: none;
+  width: 50%;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.heroTextBx .HeroCTA:hover {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--whiteColor);
+  transition: 0.5s all ease-in-out;
+}
+/* Hero Section END */
+
+/* Member Offer*/
+.memberOffer {
+  width: 100%;
+  height: 100%;
+  background:var(--bgPrimary);
+  padding: 5em;
+}
+
+.memberOffer .sectionHeading{
+  text-align: center;
+  font-family:var(--secFont);
+  font-size: 3.2em;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
