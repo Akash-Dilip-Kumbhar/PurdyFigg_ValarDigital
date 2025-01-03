@@ -181,18 +181,134 @@ body {
 }
 /* Hero Section END */
 
-/* Member Offer*/
+/* Member Offer Start*/
 .memberOffer {
   width: 100%;
   height: 100%;
-  background:var(--bgPrimary);
+  background: var(--bgPrimary);
   padding: 5em;
 }
 
-.memberOffer .sectionHeading{
+.memberOffer .sectionHeading {
   text-align: center;
-  font-family:var(--secFont);
+  font-family: var(--secFont);
   font-size: 3.2em;
   font-weight: 500;
   color: var(--primaryColor);
+}
+
+/* Member Offer 1x - Desktop 6 */
+.swiper {
+  width: 500px;
+  height: 500px;
+}
+.swiper img {
+  width: 100%;
+}
+
+/* ***MemberofferContent** */
+.memberOffer .headingContent .title {
+  font-family: var(--primaryFont);
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.memberOffer .headingContent .review {
+  display: flex;
+  gap: 1em;
+  font-weight: 600;
+}
+
+.accordion {
+  margin: 10px 0;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  background-color: transparent !important;
+  border: 1px solid gray !important;
+  border-radius: 5px;
+}
+.accordion-title .extraOff{
+  text-align: center;
+  font-family: var(--primaryFont);
+  font-size: 1em;
+ 
+  color: var(--whiteColor);
+}
+.extraOff.Off1{
+  background-color: var(--secColor);
+}
+.extraOff.Off2{
+  background-color: var(--tertiaryColor);
+}
+
+.accordion-title .header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primaryColor);
+  padding:  0.8em ;
+  cursor: pointer;
+}
+
+.accordion-title .header .text,
+.accordion-title .header .price span {
+  font-family: var(--primaryFont);
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.accordion-title .header .text {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header .text .icon i {
+  font-size: 1.5em;
+}
+
+.header .price .oldPrice {
+  color: #888;
+}
+.accordion-content {
+  display: none;
+  padding-left: 0.8em;
+  background-color: var(--bgWhite);
+}
+.accordion-content .offerChecklist {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-content ul li i {
+  font-size: 1.5em;
+}
+.offerChecklist li {
+  font-family: var(--blackColor);
+  font-size: 1em;
+  font-weight: 500;
+}
+.accordion-item.active .accordion-title .header {
+  padding: 0.8em !important;
+  padding-bottom: 0 !important;
+}
+
+.accordion-item.active {
+  background-color: var(--bgWhite) !important;
+  border: 2px solid var(--primaryColor) !important;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.accordion-item .bi-check-circle-fill {
+  display: none;
+}
+.accordion-item.active .bi-check-circle-fill {
+  display: block;
+}
+.accordion-item.active .bi-circle {
+  display: none;
 }
